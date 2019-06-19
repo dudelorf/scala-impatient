@@ -1,4 +1,4 @@
-package example
+package main
 
 object App extends App {
 
