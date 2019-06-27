@@ -1,8 +1,4 @@
-package ch5
-
-object Ch7 extends App {
-  Ex9.ex9()
-}
+package ch7
 
 /* Ex 1
  *

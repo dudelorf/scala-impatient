@@ -1,4 +1,4 @@
-package ch5.com.eric.impatient
+package ch7.com.eric.impatient
 
 object WriterWithoutThing {
   // fails, ThingProvider is not available
