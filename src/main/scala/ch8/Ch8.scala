@@ -1,12 +1,5 @@
 package ch8
 
-object Ch8 extends App {
-  val c = new CheckingAccount(100)
-  println(c.deposit(10))
-  println(c.withdraw(10))
-  println(c.currentBalance)
-}
-
 /* Ex 1
  */
 class BankAccount(initialBalance: Double) {
@@ -114,4 +107,40 @@ class Rectangle(val length: Double, val width: Double) extends Shape {
 
 class Circle(val radius: Double) extends Shape {
   def centerPoint = new Point(radius, radius)
+}
+
+/* Ex 7
+ */
+class Square(x: Int, y: Int, width: Int) extends java.awt.Rectangle(x, y, width, width) {
+
+  def this(width: Int) {
+    this(0, 0, width)
+  }
+
+  def this() {
+    this(0, 0, 0)
+  }
+}
+
+/* Ex 9
+ */
+class Creature {
+  def range: Int = 10
+  val env: Array[Int] = new Array[Int](range)
+}
+
+class Ant extends Creature {
+  override def range: Int = 2
+  // with val in the subclass, env has length 0
+  // with def instead of val, env has expected length
+}
+
+/* Ex 11
+ */
+class LongPoint(xCoord: Int, yCoord: Int) {
+  private val x_y_store: Long = (xCoord.toLong << 32) | yCoord.toLong
+
+  def x = (x_y_store >> 32).toInt
+
+  def y = x_y_store.toInt
 }
