@@ -5,10 +5,6 @@ import scala.collection.mutable
 import java.beans.PropertyChangeEvent
 import java.io.InputStream
 
-object Ch10 extends App {
-  new LoggingExample()
-}
-
 /* Ex 1
  */
 trait RectangleLike {
