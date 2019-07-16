@@ -1,9 +1,6 @@
 package ch11
 import scala.runtime.RichInt
-
-object Ch11 extends App {
-  println(Money(1, 50) + Money(0, 55))
-}
+import scala.collection.mutable
 
 /* Ex 1
  *
