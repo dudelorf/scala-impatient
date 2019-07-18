@@ -1,6 +1,6 @@
 package ch12
 
-object Ch12 extends App {
+object Ch12 {
  
   /* Ex 1
    */
